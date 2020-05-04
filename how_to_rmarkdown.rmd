@@ -44,40 +44,15 @@ knitr::include_graphics("knit_options.png")
 It will generate a PDF file into the same folder where .rmd file is located.
 
 ## Starting from the end
-Let's generate a PDF file using RMarkdown:
+Try to generate this page using your RStudio.
 
-1. Open RStudio
-2. Open a new tab on your editor (shortcut: press Ctrl+Shift+N)
-3. Save the empty file in .rmd format (e.g. my_first_rmarkdown.rmd)
-4. Copy the following code block to your file:
+1. Go to [](https://github.com/BrainInAMath/AdvancedStatistics)
+2. Download the content by clicking the green button "Clone or download"
+3. After downloading, extract the files in a folder you want
+4. Open the _how_to_markdown.rmd_ file using RStudio
+5. Knit to HTML
+6. Knit to PDF
 
-```
----
-title: "RMarkdown O'mine"
-author: Me
-fontsize: 10pt
-geometry: margin=.75in
-output:
-  pdf_document: default
-  html_document:
-    df_print: paged
-header-includes:
-- \usepackage{graphicx}
-- \usepackage{color}
-graphics: yes
----
-
-# Sweet RMarkdown O'Mine
-My RMarkdown's got a smile that it seems to me
-Reminds me of childhood memories
-Where everything
-Was as fresh as the bright blue sky
-
-RMarkdown o' mine
-RMarkdown of mine
-```
-
-## A fancier PDF with RMarkdown
 
 ---------------------------------------------
 
@@ -89,7 +64,9 @@ An RMarkdown file consists of two main parts:
 2. __Body__ that contains everything else
 
 # Header
-A header is in form of YAML, yet another markdown language. It usually doesn't change. You can copy-paste and tweak the following for all your submissions:
+A header is in form of YAML, yet another markdown language. It usually doesn't change. 
+
+You can copy-paste and tweak the following for all your submissions, but __usually editors cannot copies as is__. Make sure there is no extra indent in your file different than the ones below:
 
 ```
 ---
@@ -134,7 +111,7 @@ ___Source: Wikipedia___
 
 
 ## Headers
--------------------------------------
+
 You can use # for entering a header. You can create headers in different sizes as below:
 
 ```
@@ -158,7 +135,7 @@ which looks like
 
 
 ## Ordered and Unordered Lists
--------------------------------------
+
 To create ordered lists you can use 1., 2., ... as below:
 
 ```
